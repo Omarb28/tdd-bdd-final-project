@@ -17,12 +17,13 @@
 """
 Test Factory to make fake objects for testing
 """
+import logging
 import factory
 from factory.fuzzy import FuzzyChoice, FuzzyDecimal
 from service.models import Product, Category
-import logging
 
 logging.getLogger("faker").setLevel(logging.WARN)
+
 
 class ProductFactory(factory.Factory):
     """Creates fake products for testing"""
