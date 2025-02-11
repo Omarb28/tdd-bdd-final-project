@@ -22,6 +22,7 @@ import factory
 from factory.fuzzy import FuzzyChoice, FuzzyDecimal
 from service.models import Product, Category
 
+logging.getLogger("factory").setLevel(logging.WARN)
 logging.getLogger("faker").setLevel(logging.WARN)
 
 
